@@ -16,6 +16,7 @@ npm start
 
 
 Usage:  
+Register a new user and login.  
 Search for "user" using the search bar and follow user1 and user2 to see some posts :)   
   
   
