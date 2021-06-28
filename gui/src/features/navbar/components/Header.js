@@ -10,7 +10,6 @@ import { Username } from "./username";
 import { useInputState } from "core/forms";
 import history from "features/main/history";
 import { MainRoutes } from "features/main/routes";
-import { useEffect } from "react";
 
 const HeaderBase = () => {
   const [searchName, setSearchName] = useInputState("");

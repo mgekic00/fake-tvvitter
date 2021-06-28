@@ -35,7 +35,6 @@ const RegisterBase = () => {
         style={{ marginTop: 14 }}
         name="register"
         onClick={register}
-        disabled={false}
         label="Register"
         id="register"
         disabled={username.length < 3 && password.length < 3}
