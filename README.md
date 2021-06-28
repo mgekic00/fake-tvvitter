@@ -5,11 +5,11 @@ BE requires Maven.
 
 RUN:
 
-cd fake-backend
-mvn clean install -DskipTests
-mvn spring-boot:run
+cd fake-backend  
+mvn clean install -DskipTests  
+mvn spring-boot:run    
 
 
-cd gui
-npm install
-npm start
+cd gui  
+npm install  
+npm start  
