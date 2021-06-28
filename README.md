@@ -12,4 +12,10 @@ mvn spring-boot:run
 
 cd gui  
 npm install  
-npm start  
+npm start      
+
+
+Usage:  
+Search for "user" using the search bar and follow user1 and user2 to see some posts :)   
+  
+  
