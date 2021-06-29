@@ -41,12 +41,7 @@ const HeaderBase = () => {
           >
             Home
           </Link>
-          <Link
-            className="navbar-dark navbar-nav nav-link navbar-expand"
-            to="/menu"
-          >
-            Messages
-          </Link>
+
           <Link
             className="navbar-dark navbar-nav nav-link navbar-expand"
             to="/create"
