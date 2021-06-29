@@ -79,7 +79,6 @@ export const login = (username, password) => async (dispatch) => {
     if (ApiHelpers.isSuccess(responseData)) {
       dispatch(loginSuccess());
       dispatch(setUserId(responseData.body.userId));
-      //dispatch(setUsername(username));
     } else {
       console.log(responseData);
       if (responseData.code === 400) {

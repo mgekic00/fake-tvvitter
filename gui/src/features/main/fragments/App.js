@@ -5,6 +5,7 @@ import { useSelector } from "react-redux";
 import { MainRoutes } from "../routes";
 import { UsersList } from "features/users";
 import { HomePage } from "features/home";
+import { CreatePost } from "features/posts/fragments/CreatePost";
 
 export const App = () => {
   const isLoggedIn = useSelector(AuthSelectors.isLoggedIn);
@@ -37,6 +38,9 @@ export const App = () => {
               </Route>
               <Route path={MainRoutes.USERS}>
                 <UsersList />
+              </Route>
+              <Route path={MainRoutes.CREATE_POST}>
+                <CreatePost />
               </Route>
               <Redirect to={MainRoutes.HOME} />
             </Switch>

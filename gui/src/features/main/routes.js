@@ -3,4 +3,5 @@ export const MainRoutes = {
   HOME: "/home",
   PROFILE: "/profile",
   USERS: "/users",
+  CREATE_POST: "/create",
 };

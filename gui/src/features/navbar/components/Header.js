@@ -47,7 +47,12 @@ const HeaderBase = () => {
           >
             Messages
           </Link>
-          <Nav.Link>New Post</Nav.Link>
+          <Link
+            className="navbar-dark navbar-nav nav-link navbar-expand"
+            to="/create"
+          >
+            New Post
+          </Link>
         </Nav>
         <Form inline onSubmit={handleSubmit}>
           <FormControl
