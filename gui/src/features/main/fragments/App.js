@@ -6,6 +6,7 @@ import { MainRoutes } from "../routes";
 import { UsersList } from "features/users";
 import { HomePage } from "features/home";
 import { CreatePost } from "features/posts/fragments/CreatePost";
+import { AppContainer, InnerContainer } from "./index.jsx";
 
 export const App = () => {
   const isLoggedIn = useSelector(AuthSelectors.isLoggedIn);
@@ -14,24 +15,8 @@ export const App = () => {
     return (
       <>
         <Header />
-        <div
-          style={{
-            width: "100%",
-            alignItems: "center",
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "center",
-          }}
-        >
-          <div
-            style={{
-              width: "75%",
-              alignItems: "center",
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-            }}
-          >
+        <AppContainer>
+          <InnerContainer>
             <Switch>
               <Route path={MainRoutes.HOME}>
                 <HomePage />
@@ -44,8 +29,8 @@ export const App = () => {
               </Route>
               <Redirect to={MainRoutes.HOME} />
             </Switch>
-          </div>
-        </div>
+          </InnerContainer>
+        </AppContainer>
       </>
     );
   }
