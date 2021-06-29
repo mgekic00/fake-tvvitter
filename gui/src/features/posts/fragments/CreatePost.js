@@ -1,10 +1,9 @@
+import { useSelector, useDispatch } from "react-redux";
 import { Input } from "core/ui/Input";
 import { Button } from "core/ui";
 import { useInputState } from "core/forms";
 import history from "features/main/history";
 import { PostsActions } from "features/posts";
-import { useSelector } from "react-redux";
-import { useDispatch } from "react-redux";
 import { AuthSelectors } from "features/auth";
 
 export const CreatePost = () => {

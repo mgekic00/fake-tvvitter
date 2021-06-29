@@ -1,11 +1,10 @@
 import React, { memo, useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { Button, Input } from "core/ui";
-import { useDispatch } from "react-redux";
-import { AuthActions } from "../redux";
 import { useInputState } from "core/forms";
-import { useSelector } from "react-redux";
-import { AuthSelectors } from "features/auth";
+import { AuthActions } from "../redux";
 import { loginInfoSlice } from "../redux/slices";
+import { AuthSelectors } from "features/auth";
 
 const LoginBase = () => {
   const dispatch = useDispatch();

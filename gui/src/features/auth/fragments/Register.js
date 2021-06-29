@@ -1,9 +1,9 @@
 import React, { memo } from "react";
-import { Button, Input } from "core/ui";
-import { AuthActions } from "../redux";
 import { useDispatch } from "react-redux";
-import { useInputState } from "core/forms";
 import "react-toastify/dist/ReactToastify.css";
+import { Button, Input } from "core/ui";
+import { useInputState } from "core/forms";
+import { AuthActions } from "../redux";
 
 const RegisterBase = () => {
   const dispatch = useDispatch();

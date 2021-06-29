@@ -1,10 +1,9 @@
+import { useDispatch, useSelector } from "react-redux";
 import { images } from "core/assets";
-import { ProfileCard } from "./index.jsx";
-import { UsersListActions } from "features/users/index.js";
-import { useDispatch } from "react-redux";
 import { Button } from "core/ui/index.js";
-import { useSelector } from "react-redux";
+import { UsersListActions } from "features/users/index.js";
 import { AuthSelectors } from "features/auth/index.js";
+import { ProfileCard } from "./index.jsx";
 
 export const UserCard = (props) => {
   const username = useSelector(AuthSelectors.username);

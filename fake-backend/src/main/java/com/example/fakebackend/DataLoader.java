@@ -48,7 +48,7 @@ public class DataLoader implements ApplicationRunner {
 
         postsRepo.save(new Post(UUID.randomUUID().toString()
                 , "user1", "Wooow. Today I ate this delicious pizza. Thanks to technology, everybody can know what I'm eating, so cool.",
-                "https://www.klikcup.com/images/blog/Best%20pizza/pizza-naslovna.jpg", new Timestamp(System.currentTimeMillis())));
+                "https://media-cdn.tripadvisor.com/media/photo-s/08/5c/3c/14/pizza-war-richtig-guuut.jpg", new Timestamp(System.currentTimeMillis())));
 
         postsRepo.save(new Post(UUID.randomUUID().toString()
                 , "user1", "Ate this pasta immediately afterwards. Hehe.",

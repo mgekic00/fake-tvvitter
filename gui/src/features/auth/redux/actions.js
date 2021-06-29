@@ -1,8 +1,8 @@
-import { loginInfoSlice } from "./slices";
-import { ApiHelpers } from "core/api";
-import history from "features/main/history";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { ApiHelpers } from "core/api";
+import history from "features/main/history";
+import { loginInfoSlice } from "./slices";
 
 export const {
   setUsername,

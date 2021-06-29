@@ -1,12 +1,12 @@
-import { Auth, AuthSelectors } from "features/auth";
-import { Header } from "features/navbar";
 import { Switch, Route, Redirect } from "react-router-dom";
 import { useSelector } from "react-redux";
-import { MainRoutes } from "../routes";
+import { Auth, AuthSelectors } from "features/auth";
+import { Header } from "features/navbar";
 import { UsersList } from "features/users";
 import { HomePage } from "features/home";
-import { CreatePost } from "features/posts/fragments/CreatePost";
+import { CreatePost } from "features/posts";
 import { AppContainer, InnerContainer } from "./index.jsx";
+import { MainRoutes } from "../routes";
 
 export const App = () => {
   const isLoggedIn = useSelector(AuthSelectors.isLoggedIn);

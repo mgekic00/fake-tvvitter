@@ -1,11 +1,11 @@
 import React, { memo } from "react";
 import { Route, Redirect, Link } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
 import { useSubroutes } from "core/navigation";
 import { Container, Text } from "core/ui";
+import { AuthRoutes } from "../routes";
 import { Login } from "./Login";
 import { Register } from "./Register";
-import { AuthRoutes } from "../routes";
-import { ToastContainer } from "react-toastify";
 
 const AuthBase = () => {
   // todo: capitalization conventions debatable in this case

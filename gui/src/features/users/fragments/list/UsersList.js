@@ -1,6 +1,6 @@
-import { UsersSelectors } from "../index";
 import { useSelector } from "react-redux";
 import { UserCard } from "features/users/components/usercard/UserCard";
+import { UsersSelectors } from "../index";
 
 export const UsersList = () => {
   const userCards = useSelector(UsersSelectors.usersList);

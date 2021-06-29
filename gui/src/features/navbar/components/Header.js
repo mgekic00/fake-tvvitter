@@ -1,15 +1,15 @@
 import React, { memo } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { Navbar, Nav, Form, FormControl, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { AuthActions } from "features/auth";
 import { UsersListActions } from "features/users";
-import { useDispatch, useSelector } from "react-redux";
 import { AuthSelectors } from "features/auth";
-import { Username } from "./username";
 import { useInputState } from "core/forms";
 import history from "features/main/history";
 import { MainRoutes } from "features/main/routes";
+import { Username } from "./username";
 
 const HeaderBase = () => {
   const [searchName, setSearchName] = useInputState("");

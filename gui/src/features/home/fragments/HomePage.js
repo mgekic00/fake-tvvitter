@@ -1,10 +1,10 @@
-import { UsersListActions } from "features/users/index.js";
-import { PostsActions } from "features/posts";
-import { useDispatch, useSelector } from "react-redux";
-import { AuthSelectors } from "features/auth";
 import { useEffect, memo } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { PostsActions } from "features/posts";
+import { AuthSelectors } from "features/auth";
 import { Post } from "features/posts/";
 import { PostsSelectors } from "features/posts";
+import { UsersListActions } from "features/users/index.js";
 
 const HomeBase = () => {
   const username = useSelector(AuthSelectors.getUsername);

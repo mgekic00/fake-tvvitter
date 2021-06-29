@@ -1,6 +1,5 @@
 import { createAction } from "@reduxjs/toolkit";
 import { ApiHelpers } from "core/api";
-import { toast } from "react-toastify";
 
 export const startLoading = createAction("posts/start-loading");
 export const stopLoading = createAction("posts/stop-loading");
@@ -67,13 +66,11 @@ export const createNewPost =
         )
         .then((data) => {
           responseData = data;
-          // dispatch(setUsername(username));
         });
 
       if (ApiHelpers.isSuccess(responseData)) {
-        toast.success("Post created successfully!");
+        console.log("Post created");
       } else {
-        toast.error("An error occurred");
         dispatch(storeErrors(responseData.body));
       }
     } catch (error) {
